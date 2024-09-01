@@ -19,20 +19,20 @@
     <link rel="stylesheet" href="./assets/favicon/favicon.ico" />
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" />
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="./assets/favicon/manifest.json" />
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon" loading="lazy" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png" loading="lazy" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png" loading="lazy" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png" loading="lazy" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png" loading="lazy" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png" loading="lazy" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png" loading="lazy" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png" loading="lazy" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png" loading="lazy" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png" loading="lazy" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" loading="lazy" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png" loading="lazy" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" loading="lazy" />
+    <link rel="manifest" href="./assets/favicon/manifest.json" loading="lazy" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/owl.css" />
     <link rel="stylesheet" href="./assets/css/lightbox.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
     <!--
 
 TemplateMo 557 Grad School
@@ -67,21 +68,39 @@ https://templatemo.com/tm-557-grad-school
       <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
       <nav id="menu" class="main-nav" role="navigation">
         <ul class="main-menu">
-          <li><a href="#!">Trang Chủ</a></li>
+          <li><a href="#" class="external">Trang Chủ</a></li>
           <li class="has-submenu">
             <a href="#!">Về Tâm Đức</a>
-            <ul class="sub-menu">
-              <li><a href="#!" rel="sponsored" class="external">Cơ sở vật chất</a></li>
-              <li><a href="#!" rel="sponsored" class="external">Các chi nhánh</a></li>
-              <li><a href="#!" rel="sponsored" class="external">Đội ngũ giáo viên</a></li>
+            <ul class="sub-menu" style="width: 230px">
               <li>
-                <a href="#!" rel="sponsored" class="external">HOẠT ĐỘNG THỂ THAO</a>
+                <a href="#!" rel="sponsored" class="external">
+                  <i class="fa fa-building"></i>
+                  &nbsp; Cơ sở vật chất
+                </a>
+              </li>
+              <li>
+                <a href="#!" rel="sponsored" class="external">
+                  <i class="fa fa-map-marker"></i>
+                  &nbsp; Các chi nhánh
+                </a>
+              </li>
+              <li>
+                <a href="#!" rel="sponsored" class="external">
+                  <i class="fa fa-users"></i>
+                  &nbsp; Đội ngũ giáo viên
+                </a>
+              </li>
+              <li>
+                <a href="#!" rel="sponsored" class="external">
+                  <i class="fa fa-futbol-o"></i>
+                  &nbsp; HOẠT ĐỘNG THỂ THAO
+                </a>
               </li>
             </ul>
           </li>
           <li><a href="#!">Lớp học</a></li>
           <!-- <li><a href="#!">Video</a></li> -->
-          <li><a href="#!">Viết Blog</a></li>
+          <li><a href="#!" class="external">Viết Blog</a></li>
           <li><a href="https://www.facebook.com/gdtamduc" target="_blank" class="external">Tuyển Dụng</a></li>
         </ul>
       </nav>
@@ -90,7 +109,7 @@ https://templatemo.com/tm-557-grad-school
     <!-- ***** Main Banner Area Start ***** -->
     <section class="section main-banner" id="top" data-section="section1">
       <div class="video-background">
-        <video autoplay muted loop id="bg-video" poster="./assets/images/video-poster.jpg">
+        <video autoplay muted loop playsinline id="bg-video" poster="./assets/images/video-poster.jpg">
           <source src="./assets/images/course-video.webm" type="video/webm" />
           <source src="./assets/images/course-video.mp4" type="video/mp4" />
         </video>
@@ -119,7 +138,7 @@ https://templatemo.com/tm-557-grad-school
     <section class="features">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-12">
+          <div class="col-lg-4 col-12 wow fadeInUp" data-wow-delay="0.2s">
             <div class="features-post">
               <div class="features-content">
                 <div class="content-show">
@@ -137,13 +156,40 @@ https://templatemo.com/tm-557-grad-school
                     môi trường này, học sinh cảm thấy thoải mái hơn khi tham gia thảo luận, đặt câu hỏi, và thể hiện
                     quan điểm của mình.
                   </p>
+                  <div class="scroll-to-section">
+                    <a href="#!" onclick="openModal()">Đọc thêm.</a>
+                  </div>
+                  <!-- Modal -->
+                  <div id="readMoreModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close" onclick="closeModal()">&times;</span>
+                      <h5>Thông tin chi tiết</h5>
+                      <p>
+                        Lớp học với ít học sinh tạo ra một môi trường học tập tương tác cao, nơi mỗi học sinh đều nhận
+                        được sự quan tâm và hỗ trợ cá nhân từ giáo viên. Số lượng học sinh trong lớp thường chỉ từ 10
+                        đến 15 người, giúp giáo viên dễ dàng theo dõi tiến độ học tập của từng em. Không gian lớp học
+                        được bố trí thoáng đãng, với bàn ghế có thể sắp xếp linh hoạt để phục vụ cho cả học nhóm và học
+                        cá nhân. Trong môi trường này, học sinh cảm thấy thoải mái hơn khi tham gia thảo luận, đặt câu
+                        hỏi, và thể hiện quan điểm của mình.
+                      </p>
+                      <button type="button" onclick="closeModal()">Đóng</button>
+                    </div>
+                  </div>
 
-                  <div class="scroll-to-section"><a href="#!">Đọc Thêm.</a></div>
+                  <script>
+                    function openModal() {
+                      document.getElementById('readMoreModal').style.display = 'block';
+                    }
+
+                    function closeModal() {
+                      document.getElementById('readMoreModal').style.display = 'none';
+                    }
+                  </script>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-12">
+          <div class="col-lg-4 col-12 wow fadeInUp" data-wow-delay="0.4s">
             <div class="features-post second-features">
               <div class="features-content">
                 <div class="content-show">
@@ -165,7 +211,7 @@ https://templatemo.com/tm-557-grad-school
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-12">
+          <div class="col-lg-4 col-12 wow fadeInUp" data-wow-delay="0.6s">
             <div class="features-post third-features">
               <div class="features-content">
                 <div class="content-show">
@@ -197,7 +243,7 @@ https://templatemo.com/tm-557-grad-school
     <section class="section why-us" data-section="section2">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s">
             <div class="section-heading">
               <h2>Tại sao bạn nên chọn Tâm Đức?</h2>
             </div>
@@ -210,7 +256,7 @@ https://templatemo.com/tm-557-grad-school
                 <li><a href="#tabs-3">Giáo dục hiện đại</a></li>
               </ul>
               <section class="tabs-content">
-                <article id="tabs-1">
+                <article id="tabs-1" class="wow fadeInUp" data-wow-delay="0.4s">
                   <div class="row">
                     <div class="col-md-6">
                       <img src="./assets/images/choose-us-image-01.jpg" alt="" />
@@ -237,7 +283,7 @@ https://templatemo.com/tm-557-grad-school
                     </div>
                   </div>
                 </article>
-                <article id="tabs-2">
+                <article id="tabs-2" class="wow fadeInUp" data-wow-delay="0.6s">
                   <div class="row">
                     <div class="col-md-6">
                       <img src="./assets/images/choose-us-image-02.jpg" alt="" />
@@ -255,7 +301,7 @@ https://templatemo.com/tm-557-grad-school
                     </div>
                   </div>
                 </article>
-                <article id="tabs-3">
+                <article id="tabs-3" class="wow fadeInUp" data-wow-delay="0.8s">
                   <div class="row">
                     <div class="col-md-6">
                       <img src="./assets/images/choose-us-image-03.jpg" alt="" />
@@ -287,7 +333,7 @@ https://templatemo.com/tm-557-grad-school
     <section class="section coming-soon" data-section="section3">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 col-xs-12">
+          <div class="col-md-7 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
             <div class="continer centerIt">
               <div>
                 <h4>
@@ -320,7 +366,7 @@ https://templatemo.com/tm-557-grad-school
               </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 wow fadeInUp" data-wow-delay="0.4s">
             <div class="right-content">
               <div class="top-content">
                 <h6>
@@ -383,13 +429,13 @@ https://templatemo.com/tm-557-grad-school
     <section class="section courses" data-section="section4">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s">
             <div class="section-heading">
               <h2>Nhận Xét Của Học Viên</h2>
             </div>
           </div>
           <div class="owl-carousel owl-theme">
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="0.4s">
               <img src="./assets/images/avatar-01.jpg" alt="Course #1" />
               <div class="down-content">
                 <h4>Nguyễn Văn Bảo</h4>
@@ -408,7 +454,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="0.6s">
               <img src="./assets/images/avatar-01.jpg" alt="Course #2" />
               <div class="down-content">
                 <h4>Văn Vũ Nhók</h4>
@@ -427,7 +473,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="0.8s">
               <img src="./assets/images/avatar-01.jpg" alt="Course #3" />
               <div class="down-content">
                 <h4>Đạt G</h4>
@@ -446,7 +492,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="1s">
               <img src="./assets/images/avatar-01.jpg" alt="Course #4" />
               <div class="down-content">
                 <h4>Vũ Ngọc Gia Huy</h4>
@@ -465,7 +511,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="1.2s">
               <img src="./assets/images/avatar-01.jpg" alt="" />
               <div class="down-content">
                 <h4>Phan T. Kim Loan</h4>
@@ -484,7 +530,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="1.4s">
               <img src="./assets/images/avatar-01.jpg" alt="" />
               <div class="down-content">
                 <h4>Lê Hà Huy</h4>
@@ -503,7 +549,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="1.6s">
               <img src="./assets/images/avatar-01.jpg" alt="" />
               <div class="down-content">
                 <h4>Cậu Bé Ngọc</h4>
@@ -522,7 +568,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="1.8s">
               <img src="./assets/images/avatar-01.jpg" alt="" />
               <div class="down-content">
                 <h4>Cà Khịa</h4>
@@ -542,7 +588,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="2s">
               <img src="./assets/images/avatar-01.jpg" alt="" />
               <div class="down-content">
                 <h4>A. Hùng</h4>
@@ -561,7 +607,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="2.2s">
               <img src="./assets/images/avatar-01.jpg" alt="" />
               <div class="down-content">
                 <h4>Tân Nguyễn</h4>
@@ -580,7 +626,7 @@ https://templatemo.com/tm-557-grad-school
                 </div>
               </div>
             </div>
-            <div class="item">
+            <div class="item wow fadeInUp" data-wow-delay="2.4s">
               <img src="./assets/images/avatar-01.jpg" alt="" />
               <div class="down-content">
                 <h4>Vũ GKA</h4>
@@ -607,7 +653,7 @@ https://templatemo.com/tm-557-grad-school
     <section class="section video" data-section="section5">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 align-self-center">
+          <div class="col-md-6 align-self-center wow fadeInUp" data-wow-delay="0.2s">
             <div class="left-content">
               <span>Hãy cùng tìm hiểu về tâm đức cùng chúng mình nhé!</span>
               <h4>
@@ -628,12 +674,11 @@ https://templatemo.com/tm-557-grad-school
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
             <article class="video-item">
               <a
                 href="https://www.facebook.com/story.php?story_fbid=1095844022253292&id=100054831135908&rdid=2O4Xt3U37a2cGuRX"
               >
-                >
                 <div class="video-caption"></div>
               </a>
               <figure>
@@ -742,7 +787,7 @@ https://templatemo.com/tm-557-grad-school
             <p>
               <i class="fa fa-copyright"></i>
               Copyright 2024 by GIA DINH TAM DUC | Design:
-              <a href="https://www.facebook.com/btvis/" rel="sponsored" target="_parent">Bac Dev</a>
+              <a href="https://www.facebook.com/btvis/" rel="sponsored" target="_blank">Bac Dev</a>
             </p>
           </div>
         </div>
@@ -762,6 +807,35 @@ https://templatemo.com/tm-557-grad-school
     <script src="./assets/js/slick-slider.js"></script>
     <script src="./assets/js/custom.js"></script>
     <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        let lazyloadImages = document.querySelectorAll('img.lazyload');
+        let lazyloadThrottleTimeout;
+
+        function lazyload() {
+          if (lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+          }
+
+          lazyloadThrottleTimeout = setTimeout(function () {
+            let scrollTop = window.pageYOffset;
+            lazyloadImages.forEach(function (img) {
+              if (img.offsetTop < window.innerHeight + scrollTop) {
+                img.src = img.dataset.src;
+                img.classList.remove('lazyload');
+              }
+            });
+            if (lazyloadImages.length == 0) {
+              document.removeEventListener('scroll', lazyload);
+              window.removeEventListener('resize', lazyload);
+              window.removeEventListener('orientationChange', lazyload);
+            }
+          }, 20);
+        }
+
+        document.addEventListener('scroll', lazyload);
+        window.addEventListener('resize', lazyload);
+        window.addEventListener('orientationChange', lazyload);
+      });
       //according to loftblog tut
       $('.nav li:first').addClass('active');
 
