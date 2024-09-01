@@ -59,13 +59,6 @@ https://templatemo.com/tm-557-grad-school
   </head>
 
   <body>
-    <div id="loading-spinner" class="loading-spinner"></div>
-
-    <!-- Loading Icon -->
-    <div id="loading">
-      <div class="spinner"></div>
-    </div>
-
     <!--header-->
     <header id="main-header" class="main-header clearfix" role="header">
       <div class="logo">
@@ -879,24 +872,6 @@ https://templatemo.com/tm-557-grad-school
           header.classList.remove('header-scrolled');
         }
       };
-
-      function hideVideoLoading() {
-        document.getElementById('video-loading').style.display = 'none';
-      }
-
-      // Hide the website content initially
-      document.body.style.display = 'none';
-
-      // Show the loading icon
-      let loadingIcon = document.createElement('div');
-      loadingIcon.className = 'loading-spinner';
-      document.body.appendChild(loadingIcon);
-
-      // Show the website content once all resources are loaded
-      window.addEventListener('load', function () {
-        document.body.style.display = 'block';
-        loadingIcon.style.display = 'none';
-      });
     </script>
   </body>
 </html>
