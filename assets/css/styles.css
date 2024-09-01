@@ -1833,9 +1833,6 @@ footer p a:hover {
     font-weight: 700;
     line-height: 1.5;
   }
-  nav[role='navigation'] li:hover a,
-  nav[role='navigation'] li.active a {
-  }
 
   @media screen and (min-width: 951px) {
     .mapping {
