@@ -59,6 +59,8 @@ https://templatemo.com/tm-557-grad-school
   </head>
 
   <body>
+    <div id="loading-spinner" class="loading-spinner"></div>
+
     <!-- Loading Icon -->
     <div id="loading">
       <div class="spinner"></div>
@@ -823,6 +825,20 @@ https://templatemo.com/tm-557-grad-school
     <script src="./assets/js/custom.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
+        // Hide the website content initially
+        document.body.style.display = 'none';
+
+        // Show the loading icon
+        let loadingIcon = document.getElementById('loading-spinner');
+        loadingIcon.style.display = 'block';
+
+        // Show the website content once all resources are loaded
+        window.addEventListener('load', function () {
+          document.body.style.display = 'block';
+          loadingIcon.style.display = 'none';
+        });
+      });
+      document.addEventListener('DOMContentLoaded', function () {
         let lazyloadImages = document.querySelectorAll('img.lazyload');
         let lazyloadThrottleTimeout;
 
@@ -947,6 +963,20 @@ https://templatemo.com/tm-557-grad-school
       function hideVideoLoading() {
         document.getElementById('video-loading').style.display = 'none';
       }
+
+      // Hide the website content initially
+      document.body.style.display = 'none';
+
+      // Show the loading icon
+      let loadingIcon = document.createElement('div');
+      loadingIcon.className = 'loading-spinner';
+      document.body.appendChild(loadingIcon);
+
+      // Show the website content once all resources are loaded
+      window.addEventListener('load', function () {
+        document.body.style.display = 'block';
+        loadingIcon.style.display = 'none';
+      });
     </script>
   </body>
 </html>
