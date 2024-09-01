@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="./assets/css/owl.css" />
     <link rel="stylesheet" href="./assets/css/lightbox.css" />
     <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/loading.css" />
     <!--
 
 TemplateMo 557 Grad School
@@ -58,6 +59,11 @@ https://templatemo.com/tm-557-grad-school
   </head>
 
   <body>
+    <!-- Loading Icon -->
+    <div id="loading">
+      <div class="spinner"></div>
+    </div>
+
     <!--header-->
     <header id="main-header" class="main-header clearfix" role="header">
       <div class="logo">
@@ -109,7 +115,16 @@ https://templatemo.com/tm-557-grad-school
     <!-- ***** Main Banner Area Start ***** -->
     <section class="section main-banner" id="top" data-section="section1">
       <div class="video-background">
-        <video autoplay muted loop playsinline id="bg-video" poster="./assets/images/video-poster.jpg">
+        <div id="video-loading" class="spinner"></div>
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          id="bg-video"
+          poster="./assets/images/video-poster.jpg"
+          onloadeddata="hideVideoLoading()"
+        >
           <source src="./assets/images/course-video.webm" type="video/webm" />
           <source src="./assets/images/course-video.mp4" type="video/mp4" />
         </video>
@@ -836,6 +851,43 @@ https://templatemo.com/tm-557-grad-school
         window.addEventListener('resize', lazyload);
         window.addEventListener('orientationChange', lazyload);
       });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        let lazyloadSections = document.querySelectorAll('section.lazyload');
+        let lazyloadThrottleTimeout;
+
+        function lazyload() {
+          if (lazyloadThrottleTimeout) {
+            clearTimeout(lazyloadThrottleTimeout);
+          }
+
+          lazyloadThrottleTimeout = setTimeout(function () {
+            let scrollTop = window.pageYOffset;
+            lazyloadSections.forEach(function (section) {
+              if (section.offsetTop < window.innerHeight + scrollTop) {
+                let scripts = section.querySelectorAll('script[data-src]');
+                scripts.forEach(function (script) {
+                  let newScript = document.createElement('script');
+                  newScript.src = script.dataset.src;
+                  document.body.appendChild(newScript);
+                  script.remove();
+                });
+                section.classList.remove('lazyload');
+              }
+            });
+            if (lazyloadSections.length == 0) {
+              document.removeEventListener('scroll', lazyload);
+              window.removeEventListener('resize', lazyload);
+              window.removeEventListener('orientationChange', lazyload);
+            }
+          }, 20);
+        }
+
+        document.addEventListener('scroll', lazyload);
+        window.addEventListener('resize', lazyload);
+        window.addEventListener('orientationChange', lazyload);
+      });
+
       //according to loftblog tut
       $('.nav li:first').addClass('active');
 
@@ -891,6 +943,10 @@ https://templatemo.com/tm-557-grad-school
           header.classList.remove('header-scrolled');
         }
       };
+
+      function hideVideoLoading() {
+        document.getElementById('video-loading').style.display = 'none';
+      }
     </script>
   </body>
 </html>
