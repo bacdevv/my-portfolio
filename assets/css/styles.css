@@ -1,11 +1,25 @@
 html {
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
+	font-family: "Faustina", "Dancing Script", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+	--first-color: hsl(14, 98%, 50%);
+	--black-color: hsl(0, 0%, 0%);
+	--black-color-light: hsl(0, 0%, 40%);
+	--white-color: hsl(0, 0%, 95%);
+	--title-color: hsl(0, 0%, 0%);
+	--text-color: hsl(0, 0%, 35%);
+	--text-color-light: hsl(0, 0%, 64%);
+	--body-color: hsl(0, 0%, 87%);
+	--container-color: hsl(0, 0%, 83%);
 }
 
 body {
+	font-family: "Faustina";
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background: var(--body-color);
 }
