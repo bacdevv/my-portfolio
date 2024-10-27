@@ -13,42 +13,30 @@ html {
 }
 
 :root {
-	--dark-blue: #03045e;
+	--dark-blue: #fff;
 	--text-color: #595959;
-	--body-color: hwb(0 87% 13%);
+	--body-color: #dedede;
 }
 
 body {
 	padding: 0 18px;
 	font-size: 1.6rem;
 	/* background: var(--body-color); */
-	background: hsla(258, 26%, 39%, 1);
-
-	background: linear-gradient(
-		90deg,
-		hsla(258, 26%, 39%, 1) 0%,
-		hsla(0, 0%, 87%, 1) 50%,
-		hsla(0, 0%, 87%, 1) 87%,
-		hsla(335, 16%, 61%, 1) 100%
+	background-image: linear-gradient(
+		135deg,
+		hsl(240deg 100% 20%) 0%,
+		hsl(281deg 100% 21%) 8%,
+		hsl(304deg 100% 23%) 17%,
+		hsl(319deg 100% 30%) 25%,
+		hsl(329deg 100% 36%) 33%,
+		hsl(336deg 100% 41%) 42%,
+		hsl(346deg 83% 51%) 50%,
+		hsl(3deg 95% 61%) 58%,
+		hsl(17deg 100% 59%) 67%,
+		hsl(240deg 100% 20%) 0%,
+		hsl(281deg 100% 21%) 8%,
+		hsl(319deg 100% 30%) 25%
 	);
-
-	background: -moz-linear-gradient(
-		90deg,
-		hsla(258, 26%, 39%, 1) 0%,
-		hsla(0, 0%, 87%, 1) 50%,
-		hsla(0, 0%, 87%, 1) 87%,
-		hsla(335, 16%, 61%, 1) 100%
-	);
-
-	background: -webkit-linear-gradient(
-		90deg,
-		hsla(258, 26%, 39%, 1) 0%,
-		hsla(0, 0%, 87%, 1) 50%,
-		hsla(0, 0%, 87%, 1) 87%,
-		hsla(335, 16%, 61%, 1) 100%
-	);
-
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#594a7d", endColorstr="#DEDEDE", GradientType=1 );
 }
 
 /* Common */
@@ -73,7 +61,7 @@ a {
 
 .desc {
 	margin-top: 32px;
-	color: #000;
+	color: #fff;
 	font-size: 2.4rem;
 	font-weight: 400;
 	line-height: 1.83; /* 183.333% */
@@ -97,7 +85,84 @@ a {
 	transform: translateY(0); /* Move to original position */
 }
 
+#scrollToTopBtn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 15px;
+	font-size: 18px;
+	background-color: #fff;
+	color: #190068;
+	border: none;
+	cursor: pointer;
+	display: none; /* Initially hidden */
+	transition: opacity 0.3s ease;
+	border-radius: 8px;
+}
+
+#scrollToTopBtn.show {
+	display: block;
+	opacity: 0.8;
+}
+
+#scrollToTopBtn:hover {
+	opacity: 1;
+}
+
 /* === END COMMON === */
+
+.container,
+.mobile-message {
+	display: none; /* Hide mobile message by default */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+	.wrapper {
+		display: none;
+	}
+
+	body {
+		width: calc(100vw - 50px);
+		background: #fff;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.container,
+	.mobile-message {
+		display: block; /* Show mobile message on smaller screens */
+	}
+
+	.mobile-message {
+		font-size: 2rem;
+		line-height: 1.4;
+		font-weight: 600;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.mobile-img {
+		margin-top: 18px;
+		width: 100%;
+		height: 500px;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+
+	.mobile-link {
+		color: #000;
+		margin-top: 18px;
+		display: inline-block;
+		text-decoration: underline;
+	}
+}
 
 .header {
 	padding-top: 28px;
@@ -173,7 +238,7 @@ a {
 .hero__info--btn {
 	word-break: break-all;
 	position: relative;
-	color: #fff;
+	color: #190068;
 	margin-top: 38px;
 	font-size: 2rem;
 	padding: 20px 45px;
@@ -228,10 +293,11 @@ a {
 	left: 120px;
 	top: 70px;
 	background: var(--dark-blue);
-	color: #fff;
+	color: #190068;
 	padding: 8px 16px;
 	border-radius: 999px;
 	font-size: 1.8rem;
+	font-weight: bold;
 }
 
 .hero__image--three-plus {
@@ -242,11 +308,13 @@ a {
 }
 
 .hero__image--circle {
+	position: absolute;
 	width: 400px;
 	right: -125px;
 	top: -20px;
 	z-index: -1;
 	border-radius: 50%;
+	color: #fff;
 }
 
 .hero__image--three-slash {
@@ -310,7 +378,7 @@ a {
 .blog-list {
 	margin-top: 124px;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 50px 80px;
 }
 
@@ -334,7 +402,7 @@ a {
 }
 
 .blog-info__date {
-	color: var(--dark-blue);
+	color: #fff;
 	font-size: 1.4rem;
 	font-style: italic;
 	font-weight: 400;
@@ -343,14 +411,14 @@ a {
 }
 
 .blog-info__heading {
-	color: var(--dark-blue);
+	color: #fff;
 	font-size: 2.4rem;
 	font-weight: bold;
 	line-height: 1.83; /* 183.333% */
 }
 
 .blog-info__desc {
-	color: var(--black-color);
+	color: #fff;
 	font-weight: 400;
 	font-size: 1.8rem;
 	line-height: 1.77; /* 177.778% */
@@ -361,7 +429,7 @@ a {
 	font-size: 2rem;
 	font-weight: 600;
 	text-decoration: underline;
-	color: var(--dark-blue);
+	color: #fff;
 	display: inline-block;
 }
 
@@ -386,6 +454,10 @@ a {
 	height: 500px;
 	object-fit: cover;
 	border-radius: 10px;
+}
+
+.contact__heading {
+	color: #fff;
 }
 
 .contact-list__desc {

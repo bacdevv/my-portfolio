@@ -12,6 +12,15 @@
 		<meta name="apple-mobile-web-app-title" content="Bac Dev" />
 		<link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
+		<!-- Font awesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
 		<!-- Stylesheet CSS -->
 		<link rel="stylesheet" href="./assets/css/reset.css" />
 		<link rel="stylesheet" href="./assets/css/styles.css" />
@@ -26,254 +35,313 @@
 	</head>
 
 	<body>
+		<div class="container">
+			<h1 class="mobile-message">Chưa phát triển trên điện thoại vui lòng truy cập trên máy tính</h1>
+			<img class="mobile-img" src="./assets/img/bac-02.jpg" alt="" />
+			<a class="mobile-link" href="https://m.facebook.com/bacdevv">My Facebook</a>
+		</div>
 		<!-- === HEADER === -->
-		<header class="header main-content">
-			<div class="header__image">
-				<a href="/"><img loading="lazy" src="./assets/img/logo.png" alt="" class="header__logo" /></a>
-				<a href="/" class="header__image--author">Bac Dev</a>
-			</div>
-			<nav class="nav">
-				<ul>
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="#about">About</a>
-					</li>
-					<li>
-						<a href="#blog">Blog</a>
-					</li>
-					<li>
-						<a href="#contact">Contact</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
-		<!-- === HERO === -->
-		<section class="hero main-content">
-			<div class="hero__info">
-				<p class="hero__info--greeting">Hello I'm Viet Bac,</p>
-				<h1 class="hero__info--title">Fulltsack Developer</h1>
-				<p class="hero__info--location">based in Viet Nam.</p>
-				<a href="#!" class="hero__info--btn">Resume</a>
-			</div>
-
-			<div class="hero__image">
-				<p class="hero__image--name">Bac Dev</p>
-				<img loading="lazy" src="./assets/img/bac.png" class="hero__image--avatar" alt="" />
-				<img loading="lazy" src="./assets/img/line-circle.png" class="hero__image--circle" alt="" />
-				<svg
-					class="hero__image--three-plus"
-					width="50"
-					height="56"
-					viewBox="0 0 50 56"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<g id="Group 10">
-						<g id="Group 7">
-							<rect id="Rectangle 18" x="9" y="16" width="6" height="24" rx="3" fill="currentColor" />
-							<rect
-								id="Rectangle 19"
-								y="31"
-								width="6"
-								height="24"
-								rx="3"
-								transform="rotate(-90 0 31)"
-								fill="currentColor"
-							/>
-						</g>
-						<g id="Group 9">
-							<rect id="Rectangle 18_2" x="35" y="32" width="6" height="24" rx="3" fill="currentColor" />
-							<rect
-								id="Rectangle 19_2"
-								x="26"
-								y="47"
-								width="6"
-								height="24"
-								rx="3"
-								transform="rotate(-90 26 47)"
-								fill="currentColor"
-							/>
-						</g>
-						<g id="Group 8">
-							<rect id="Rectangle 18_3" x="35" width="6" height="24" rx="3" fill="currentColor" />
-							<rect
-								id="Rectangle 19_3"
-								x="26"
-								y="15"
-								width="6"
-								height="24"
-								rx="3"
-								transform="rotate(-90 26 15)"
-								fill="currentColor"
-							/>
-						</g>
-					</g>
-				</svg>
-				<svg
-					class="hero__image--three-slash"
-					width="104"
-					height="30"
-					viewBox="0 0 104 30"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<g id="Group 6">
-						<rect
-							id="Rectangle 13"
-							x="12.2021"
-							width="5"
-							height="30"
-							transform="rotate(24 12.2021 0)"
-							fill="currentColor"
-						/>
-						<rect
-							id="Rectangle 14"
-							x="33.9719"
-							width="5"
-							height="30"
-							transform="rotate(24 33.9719 0)"
-							fill="currentColor"
-						/>
-						<rect
-							id="Rectangle 15"
-							x="55.7418"
-							width="5"
-							height="30"
-							transform="rotate(24 55.7418 0)"
-							fill="currentColor"
-						/>
-						<rect
-							id="Rectangle 16"
-							x="77.5116"
-							width="5"
-							height="30"
-							transform="rotate(24 77.5116 0)"
-							fill="currentColor"
-						/>
-						<rect
-							id="Rectangle 17"
-							x="99.2813"
-							width="5"
-							height="30"
-							transform="rotate(24 99.2813 0)"
-							fill="currentColor"
-						/>
-					</g>
-				</svg>
-			</div>
-		</section>
-
-		<!-- === ABOUT === -->
-		<section class="about main-content hide-show">
-			<h2 id="about" class="about__heading lv2">About.</h2>
-			<p class="desc hide-show">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-				phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
-			</p>
-
-			<div class="about-list">
-				<div class="about-item">
-					<p class="about-item__event hide-show">2018-2020</p>
-					<p class="about-item__desc desc hide-show">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-						phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
-					</p>
-				</div>
-
-				<div class="about-item">
-					<p class="about-item__event hide-show">2020-2022</p>
-					<p class="about-item__desc desc hide-show">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-						phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
-					</p>
-				</div>
-
-				<div class="about-item">
-					<p class="about-item__event hide-show">2024 - Present</p>
-					<p class="about-item__desc desc hide-show">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-						phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<!-- === BLOG === -->
-		<section class="blog main-content">
-			<h2 id="blog" class="blog__heading lv2 hide-show">Blog.</h2>
-			<p class="desc hide-show">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-				phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
-			</p>
-
-			<div class="blog-list">
-				<div class="blog-item">
-					<a href="#!"
-						><img loading="lazy" src="./assets/img/blog-01.jpg" alt="" class="blog-item__thumb"
-					/></a>
-					<div class="blog-info">
-						<p class="blog-info__date hide-show">November 24, 2019</p>
-						<h3 class="blog-info__heading hide-show">Some Case Study</h3>
-						<p>
-							<a href="#!" class="blog-info__desc line-clamp hide-show" style="--line-clamp: 3"
-								>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam rhoncus</a
+		<div class="wrapper">
+			<header class="header main-content">
+				<div class="header__image">
+					<a href="/"
+						><svg
+							class="header__logo"
+							version="1.0"
+							xmlns="http://www.w3.org/2000/svg"
+							width="600.000000pt"
+							height="600.000000pt"
+							viewBox="0 0 600.000000 600.000000"
+							preserveAspectRatio="xMidYMid meet"
+						>
+							<g
+								transform="translate(0.000000,600.000000) scale(0.100000,-0.100000)"
+								fill="#fff"
+								stroke="none"
 							>
-						</p>
-						<a href="#!" class="blog-item__btn hide-show"> Read More. </a>
-					</div>
+								<path
+									d="M1592 5327 l-32 -33 0 -2040 0 -2040 33 -32 33 -32 799 0 c814 0 896
+	3 1073 40 481 101 826 406 935 830 145 559 -50 1078 -494 1315 l-59 31 47 32
+	c283 184 441 473 443 807 2 603 -321 994 -919 1115 -184 37 -274 40 -1059 40
+	l-768 0 -32 -33z m1491 -557 c357 -29 529 -146 582 -395 32 -153 10 -349 -52
+	-454 -80 -137 -233 -237 -427 -278 -70 -15 -141 -18 -511 -18 l-430 0 -3 565
+	c-1 311 0 571 3 578 6 15 649 17 838 2z m236 -1758 c239 -53 388 -186 446
+	-397 26 -96 31 -284 11 -385 -52 -254 -225 -417 -506 -477 -75 -16 -140 -18
+	-555 -18 l-470 0 -3 640 c-1 352 0 646 3 654 4 11 89 12 493 8 445 -4 495 -6
+	581 -25z"
+								/>
+								<path
+									d="M1646 962 c-40 -5 -74 -29 -93 -65 -12 -23 -15 -63 -15 -177 0 -161
+	8 -192 58 -225 26 -17 101 -17 1364 -17 1466 0 1374 -4 1415 58 15 23 17 50
+	17 185 -1 171 -5 189 -60 225 -24 16 -116 17 -1341 18 -724 1 -1329 0 -1345
+	-2z"
+								/>
+							</g>
+						</svg>
+					</a>
+					<a href="/" class="header__image--author">Bac Dev</a>
 				</div>
-
-				<div class="blog-item">
-					<a href="#!"
-						><img loading="lazy" src="./assets/img/blog-02.jpg" alt="" class="blog-item__thumb"
-					/></a>
-					<div class="blog-info">
-						<p class="blog-info__date hide-show">November 24, 2019</p>
-						<h3 class="blog-info__heading hide-show">Some Case Study</h3>
-						<p>
-							<a href="#!" class="blog-info__desc line-clamp hide-show" style="--line-clamp: 3">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin
-							</a>
-						</p>
-						<a href="#!" class="blog-item__btn hide-show"> Read More. </a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- === CONTACT === -->
-		<div id="contact" class="contact main-content">
-			<h2 class="contact__heading lv2 hide-show">Contact</h2>
-			<div class="contact__content">
-				<img loading="lazy" src="./assets/img/bac-02.jpg" alt="" class="contact__content--img hide-show" />
-				<div class="contact-list">
-					<p class="contact-list__desc desc hide-show">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
-						phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
-					</p>
-					<ul class="contact-list__group">
+				<nav class="nav">
+					<ul>
 						<li>
-							<a class="hide-show" href="mailto:vietbac.coding@gmail.com" rel="noopener"
-								><strong>Gmail: </strong>vietbac.coding@gmail.com</a
-							>
+							<a href="/">Home</a>
 						</li>
 						<li>
-							<a class="hide-show" href="https://www.facebook.com/bacdevv/" target="_blank" rel="noopener"
-								><strong>Facebook: </strong>facebook.com/bacdevv</a
-							>
+							<a href="#about">About</a>
 						</li>
 						<li>
-							<a class="hide-show" href="https://www.tiktok.com/@bacdevv" target="_blank" rel="noopener"
-								><strong>Tiktok: </strong> tiktok.com/bacdevv</a
-							>
+							<a href="#blog">Blog</a>
+						</li>
+						<li>
+							<a href="#contact">Contact</a>
 						</li>
 					</ul>
+				</nav>
+			</header>
+
+			<!-- === HERO === -->
+			<section class="hero main-content">
+				<div class="hero__info">
+					<p class="hero__info--greeting">Hello I'm Viet Bac,</p>
+					<h1 class="hero__info--title">Fulltsack Developer</h1>
+					<p class="hero__info--location">based in Viet Nam.</p>
+					<a href="./assets/img/bac-02.jpg" class="hero__info--btn" download>Resume</a>
+				</div>
+
+				<div class="hero__image">
+					<p class="hero__image--name">Bac Dev</p>
+					<img loading="lazy" src="./assets/img/bac.png" class="hero__image--avatar" alt="" />
+					<svg
+						class="hero__image--circle"
+						width="493"
+						height="493"
+						viewBox="0 0 493 493"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M143.385 479.93L143.385 479.929C86.1603 457.468 37.9742 403.063 14.9662 333.777C-7.95257 264.576 -5.57458 180.566 36.1367 115.425C77.9457 50.1815 159.226 3.66055 244.33 0.656615C329.356 -2.3478 418.26 38.0833 460.778 103.39C503.292 168.78 499.498 259.152 470.485 326.715C441.489 394.148 387.218 438.755 326.908 465.895C266.679 492.947 200.512 502.389 143.385 479.93Z"
+							stroke="currentColor"
+						/>
+					</svg>
+					<svg
+						class="hero__image--three-plus"
+						width="50"
+						height="56"
+						viewBox="0 0 50 56"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g id="Group 10">
+							<g id="Group 7">
+								<rect id="Rectangle 18" x="9" y="16" width="6" height="24" rx="3" fill="currentColor" />
+								<rect
+									id="Rectangle 19"
+									y="31"
+									width="6"
+									height="24"
+									rx="3"
+									transform="rotate(-90 0 31)"
+									fill="currentColor"
+								/>
+							</g>
+							<g id="Group 9">
+								<rect id="Rectangle 18_2" x="35" y="32" width="6" height="24" rx="3" fill="currentColor" />
+								<rect
+									id="Rectangle 19_2"
+									x="26"
+									y="47"
+									width="6"
+									height="24"
+									rx="3"
+									transform="rotate(-90 26 47)"
+									fill="currentColor"
+								/>
+							</g>
+							<g id="Group 8">
+								<rect id="Rectangle 18_3" x="35" width="6" height="24" rx="3" fill="currentColor" />
+								<rect
+									id="Rectangle 19_3"
+									x="26"
+									y="15"
+									width="6"
+									height="24"
+									rx="3"
+									transform="rotate(-90 26 15)"
+									fill="currentColor"
+								/>
+							</g>
+						</g>
+					</svg>
+					<svg
+						class="hero__image--three-slash"
+						width="104"
+						height="30"
+						viewBox="0 0 104 30"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g id="Group 6">
+							<rect
+								id="Rectangle 13"
+								x="12.2021"
+								width="5"
+								height="30"
+								transform="rotate(24 12.2021 0)"
+								fill="currentColor"
+							/>
+							<rect
+								id="Rectangle 14"
+								x="33.9719"
+								width="5"
+								height="30"
+								transform="rotate(24 33.9719 0)"
+								fill="currentColor"
+							/>
+							<rect
+								id="Rectangle 15"
+								x="55.7418"
+								width="5"
+								height="30"
+								transform="rotate(24 55.7418 0)"
+								fill="currentColor"
+							/>
+							<rect
+								id="Rectangle 16"
+								x="77.5116"
+								width="5"
+								height="30"
+								transform="rotate(24 77.5116 0)"
+								fill="currentColor"
+							/>
+							<rect
+								id="Rectangle 17"
+								x="99.2813"
+								width="5"
+								height="30"
+								transform="rotate(24 99.2813 0)"
+								fill="currentColor"
+							/>
+						</g>
+					</svg>
+				</div>
+			</section>
+
+			<!-- === ABOUT === -->
+			<section class="about main-content hide-show">
+				<h2 id="about" class="about__heading lv2">About.</h2>
+				<p class="desc hide-show">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+					phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+				</p>
+
+				<div class="about-list">
+					<div class="about-item">
+						<p class="about-item__event hide-show">2018-2020</p>
+						<p class="about-item__desc desc hide-show">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+							phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum
+							diam.
+						</p>
+					</div>
+
+					<div class="about-item">
+						<p class="about-item__event hide-show">2020-2022</p>
+						<p class="about-item__desc desc hide-show">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+							phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum
+							diam.
+						</p>
+					</div>
+
+					<div class="about-item">
+						<p class="about-item__event hide-show">2024 - Present</p>
+						<p class="about-item__desc desc hide-show">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+							phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum
+							diam.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- === BLOG === -->
+			<section class="blog main-content">
+				<h2 id="blog" class="blog__heading lv2 hide-show">Blog.</h2>
+				<p class="desc hide-show">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+					phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+				</p>
+
+				<div class="blog-list">
+					<div class="blog-item">
+						<a href="#!"
+							><img loading="lazy" src="./assets/img/blog-01.jpg" alt="" class="blog-item__thumb"
+						/></a>
+						<div class="blog-info">
+							<p class="blog-info__date hide-show">November 24, 2019</p>
+							<h3 class="blog-info__heading hide-show">Some Case Study</h3>
+							<p>
+								<a href="#!" class="blog-info__desc line-clamp hide-show" style="--line-clamp: 3"
+									>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam rhoncus</a
+								>
+							</p>
+							<a href="#!" class="blog-item__btn hide-show"> Read More. </a>
+						</div>
+					</div>
+
+					<div class="blog-item">
+						<a href="#!"
+							><img loading="lazy" src="./assets/img/blog-02.jpg" alt="" class="blog-item__thumb"
+						/></a>
+						<div class="blog-info">
+							<p class="blog-info__date hide-show">November 24, 2019</p>
+							<h3 class="blog-info__heading hide-show">Some Case Study</h3>
+							<p>
+								<a href="#!" class="blog-info__desc line-clamp hide-show" style="--line-clamp: 3">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin
+								</a>
+							</p>
+							<a href="#!" class="blog-item__btn hide-show"> Read More. </a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- === CONTACT === -->
+			<div id="contact" class="contact main-content">
+				<h2 class="contact__heading lv2 hide-show">Contact</h2>
+				<div class="contact__content">
+					<img loading="lazy" src="./assets/img/bac-02.jpg" alt="" class="contact__content--img hide-show" />
+					<div class="contact-list">
+						<p class="contact-list__desc desc hide-show">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
+							phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum
+							diam.
+						</p>
+						<ul class="contact-list__group">
+							<li>
+								<a class="hide-show" href="mailto:vietbac.coding@gmail.com" rel="noopener"
+									><strong>Email: </strong>vietbac.coding@gmail.com</a
+								>
+							</li>
+							<li>
+								<a class="hide-show" href="https://www.facebook.com/bacdevv/" target="_blank" rel="noopener"
+									><strong>Facebook: </strong>facebook.com/bacdevv</a
+								>
+							</li>
+							<li>
+								<a class="hide-show" href="https://www.tiktok.com/@bacdevv" target="_blank" rel="noopener"
+									><strong>Tiktok: </strong> tiktok.com/bacdevv</a
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up-long"></i></button>
 		<script>
 			document.addEventListener("scroll", () => {
 				const hideShowElements = document.querySelectorAll(".hide-show");
@@ -289,6 +357,26 @@
 					}
 				});
 			});
+
+			// Get the button
+			const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+			// Show button when scrolled down 100px from the top of the document
+			window.onscroll = function () {
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					scrollToTopBtn.classList.add("show");
+				} else {
+					scrollToTopBtn.classList.remove("show");
+				}
+			};
+
+			// When the button is clicked, scroll to the top smoothly
+			scrollToTopBtn.onclick = function () {
+				window.scrollTo({
+					top: 0,
+					behavior: "smooth",
+				});
+			};
 		</script>
 	</body>
 </html>
