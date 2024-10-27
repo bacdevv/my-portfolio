@@ -14,14 +14,41 @@ html {
 
 :root {
 	--dark-blue: #03045e;
-	--text-color: hsl(0, 0%, 35%);
-	--body-color: hsl(0, 0%, 87%);
+	--text-color: #595959;
+	--body-color: hwb(0 87% 13%);
 }
 
 body {
 	padding: 0 18px;
 	font-size: 1.6rem;
-	background: var(--body-color);
+	/* background: var(--body-color); */
+	background: hsla(258, 26%, 39%, 1);
+
+	background: linear-gradient(
+		90deg,
+		hsla(258, 26%, 39%, 1) 0%,
+		hsla(0, 0%, 87%, 1) 50%,
+		hsla(0, 0%, 87%, 1) 87%,
+		hsla(335, 16%, 61%, 1) 100%
+	);
+
+	background: -moz-linear-gradient(
+		90deg,
+		hsla(258, 26%, 39%, 1) 0%,
+		hsla(0, 0%, 87%, 1) 50%,
+		hsla(0, 0%, 87%, 1) 87%,
+		hsla(335, 16%, 61%, 1) 100%
+	);
+
+	background: -webkit-linear-gradient(
+		90deg,
+		hsla(258, 26%, 39%, 1) 0%,
+		hsla(0, 0%, 87%, 1) 50%,
+		hsla(0, 0%, 87%, 1) 87%,
+		hsla(335, 16%, 61%, 1) 100%
+	);
+
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#594a7d", endColorstr="#DEDEDE", GradientType=1 );
 }
 
 /* Common */
@@ -110,7 +137,6 @@ a {
 }
 
 .nav li a:hover {
-	color: var(--text-color);
 	text-decoration: underline;
 }
 
@@ -364,6 +390,7 @@ a {
 
 .contact-list__desc {
 	margin: 0;
+	color: #fff;
 }
 
 .contact-list__group {
@@ -379,6 +406,6 @@ a {
 
 .contact-list__group a {
 	font-size: 1.8rem;
-	color: var(--dark-blue);
+	color: #fff;
 	margin-top: 18px;
 }
