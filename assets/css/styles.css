@@ -1,25 +1,203 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 html {
+	font-size: 62.5%;
 	font-family: "Faustina", "Dancing Script", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 :root {
-	--first-color: hsl(14, 98%, 50%);
-	--black-color: hsl(0, 0%, 0%);
-	--black-color-light: hsl(0, 0%, 40%);
-	--white-color: hsl(0, 0%, 95%);
-	--title-color: hsl(0, 0%, 0%);
+	--dark-blue: #03045e;
 	--text-color: hsl(0, 0%, 35%);
-	--text-color-light: hsl(0, 0%, 64%);
 	--body-color: hsl(0, 0%, 87%);
-	--container-color: hsl(0, 0%, 83%);
 }
 
 body {
-	font-family: "Faustina";
-	height: 100vh;
+	padding: 0 18px;
+	font-size: 1.6rem;
+	background: var(--body-color);
+}
+
+/* Common */
+
+a {
+	text-decoration: none;
+}
+
+.main-content {
+	width: 900px;
+	max-width: calc(100% - 48px);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header {
+	padding-top: 28px;
+	display: flex;
+	align-items: center;
+}
+
+.header__image {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.header__image--author {
+	color: var(--black-color);
+	font-size: 2rem;
+	padding: 16px 0;
+}
+
+.header__logo {
+	width: 38px;
+	height: 38px;
+}
+
+.nav {
+	margin-left: auto;
+}
+
+.nav ul {
+	display: flex;
+}
+
+.nav li a {
+	font-size: 1.8rem;
+	color: var(--dark-blue);
+	padding: 8px 16px;
+}
+
+.nav li a:hover {
+	color: var(--text-color);
+	text-decoration: underline;
+}
+
+/* === HERO === */
+.hero {
+	margin-top: 130px;
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+}
+
+.hero__info {
+	color: var(--dark-blue);
+	width: 25%;
+}
+
+.hero__info--greeting {
+	font-size: 2.8rem;
+	font-weight: 600;
+}
+
+.hero__info--title {
+	margin: 16px 0;
+	font-size: 10rem;
+	font-weight: 900;
+}
+
+.hero__info--location {
+	margin-top: 10px;
+	font-size: 2.8rem;
+	font-weight: 500;
+}
+
+.hero__info--btn {
+	word-break: break-all;
+	position: relative;
+	color: #fff;
+	margin-top: 38px;
+	font-size: 2rem;
+	padding: 20px 45px;
+	display: flex;
+	align-items: center;
+	font-weight: 500;
+	border-radius: 6px;
+	border: 2px solid var(--Dark-Brown, #474306);
+	display: inline-block;
+	text-align: center;
+}
+
+.hero__info--btn:hover {
+	color: var(--dark-blue);
+	border: 2px solid var(--dark-blue);
+}
+
+.hero__info--btn::after {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	width: 158px;
+	height: 61px;
+	background: var(--dark-blue);
+	top: 7px;
+	left: 7px;
+	right: 0;
+	border-radius: 6px;
+	z-index: -1;
+}
+
+.hero__info--btn:hover:after {
+	top: 0;
+	left: 0;
+	transition: all ease 0.3s;
 	background: var(--body-color);
+}
+
+.hero__image {
+	width: 45%;
+	position: relative;
+}
+
+.hero__image--name,
+.hero__image img {
+	position: absolute;
+}
+
+.hero__image--name {
+	font-family: "Dancing Script";
+	left: 120px;
+	top: 70px;
+	background: var(--dark-blue);
+	color: #fff;
+	padding: 8px 16px;
+	border-radius: 999px;
+	font-size: 1.8rem;
+}
+
+.hero__image--three-plus {
+	position: absolute;
+	right: -81px;
+	top: -20px;
+	color: var(--dark-blue);
+}
+
+.hero__image--circle {
+	width: 400px;
+	right: -125px;
+	top: -20px;
+	z-index: -1;
+	border-radius: 50%;
+}
+
+.hero__image--three-slash {
+	position: absolute;
+	bottom: 106px;
+	right: 180px;
+	top: 300px;
+	color: var(--dark-blue);
+}
+
+.hero__image--avatar {
+	width: 300px;
+	max-width: 100%;
+	display: block;
+	position: relative;
+	top: -80px;
+	right: -65px;
 }
