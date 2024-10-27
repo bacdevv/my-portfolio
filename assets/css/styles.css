@@ -59,6 +59,17 @@ a {
 	overflow: hidden;
 }
 
+.hide-show {
+	opacity: 0; /* Initial hidden state */
+	transform: translateY(20px); /* Initial position */
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth animation */
+}
+
+.hide-show.show {
+	opacity: 1; /* Reveal */
+	transform: translateY(0); /* Move to original position */
+}
+
 /* === END COMMON === */
 
 .header {
@@ -235,10 +246,10 @@ a {
 }
 
 .about-list {
-	margin: 145px 0 0 150px;
 	display: flex;
 	flex-direction: column;
 	gap: 80px 0;
+	margin: 145px 0 0 150px;
 }
 
 .about-item__event {

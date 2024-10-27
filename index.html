@@ -29,7 +29,7 @@
 		<!-- === HEADER === -->
 		<header class="header main-content">
 			<div class="header__image">
-				<a href="/"><img src="./assets/img/logo.png" alt="" class="header__logo" /></a>
+				<a href="/"><img loading="lazy" src="./assets/img/logo.png" alt="" class="header__logo" /></a>
 				<a href="/" class="header__image--author">Bac Dev</a>
 			</div>
 			<nav class="nav">
@@ -61,8 +61,8 @@
 
 			<div class="hero__image">
 				<p class="hero__image--name">Bac Dev</p>
-				<img src="./assets/img/bac.png" class="hero__image--avatar" alt="" />
-				<img src="./assets/img/line-circle.png" class="hero__image--circle" alt="" />
+				<img loading="lazy" src="./assets/img/bac.png" class="hero__image--avatar" alt="" />
+				<img loading="lazy" src="./assets/img/line-circle.png" class="hero__image--circle" alt="" />
 				<svg
 					class="hero__image--three-plus"
 					width="50"
@@ -167,33 +167,33 @@
 		</section>
 
 		<!-- === ABOUT === -->
-		<section class="about main-content">
+		<section class="about main-content hide-show">
 			<h2 id="about" class="about__heading lv2">About.</h2>
-			<p class="desc">
+			<p class="desc hide-show">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
 				phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
 			</p>
 
 			<div class="about-list">
 				<div class="about-item">
-					<p class="about-item__event">2018-2020</p>
-					<p class="about-item__desc desc">
+					<p class="about-item__event hide-show">2018-2020</p>
+					<p class="about-item__desc desc hide-show">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
 						phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
 					</p>
 				</div>
 
 				<div class="about-item">
-					<p class="about-item__event">2020-2022</p>
-					<p class="about-item__desc desc">
+					<p class="about-item__event hide-show">2020-2022</p>
+					<p class="about-item__desc desc hide-show">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
 						phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
 					</p>
 				</div>
 
 				<div class="about-item">
-					<p class="about-item__event">2024 - Present</p>
-					<p class="about-item__desc desc">
+					<p class="about-item__event hide-show">2024 - Present</p>
+					<p class="about-item__desc desc hide-show">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
 						phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
 					</p>
@@ -203,38 +203,42 @@
 
 		<!-- === BLOG === -->
 		<section class="blog main-content">
-			<h2 id="blog" class="blog__heading lv2">Blog.</h2>
-			<p class="desc">
+			<h2 id="blog" class="blog__heading lv2 hide-show">Blog.</h2>
+			<p class="desc hide-show">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
 				phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
 			</p>
 
 			<div class="blog-list">
 				<div class="blog-item">
-					<a href="#!"><img src="./assets/img/blog-01.jpg" alt="" class="blog-item__thumb" /></a>
+					<a href="#!"
+						><img loading="lazy" src="./assets/img/blog-01.jpg" alt="" class="blog-item__thumb"
+					/></a>
 					<div class="blog-info">
-						<p class="blog-info__date">November 24, 2019</p>
-						<h3 class="blog-info__heading">Some Case Study</h3>
+						<p class="blog-info__date hide-show">November 24, 2019</p>
+						<h3 class="blog-info__heading hide-show">Some Case Study</h3>
 						<p>
-							<a href="#!" class="blog-info__desc line-clamp" style="--line-clamp: 3"
+							<a href="#!" class="blog-info__desc line-clamp hide-show" style="--line-clamp: 3"
 								>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam rhoncus</a
 							>
 						</p>
-						<a href="#!" class="blog-item__btn"> Read More. </a>
+						<a href="#!" class="blog-item__btn hide-show"> Read More. </a>
 					</div>
 				</div>
 
 				<div class="blog-item">
-					<a href="#!"><img src="./assets/img/blog-02.jpg" alt="" class="blog-item__thumb" /></a>
+					<a href="#!"
+						><img loading="lazy" src="./assets/img/blog-02.jpg" alt="" class="blog-item__thumb"
+					/></a>
 					<div class="blog-info">
-						<p class="blog-info__date">November 24, 2019</p>
-						<h3 class="blog-info__heading">Some Case Study</h3>
+						<p class="blog-info__date hide-show">November 24, 2019</p>
+						<h3 class="blog-info__heading hide-show">Some Case Study</h3>
 						<p>
-							<a href="#!" class="blog-info__desc line-clamp" style="--line-clamp: 3">
+							<a href="#!" class="blog-info__desc line-clamp hide-show" style="--line-clamp: 3">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin
 							</a>
 						</p>
-						<a href="#!" class="blog-item__btn"> Read More. </a>
+						<a href="#!" class="blog-item__btn hide-show"> Read More. </a>
 					</div>
 				</div>
 			</div>
@@ -242,27 +246,27 @@
 
 		<!-- === CONTACT === -->
 		<div id="contact" class="contact main-content">
-			<h2 class="contact__heading lv2">Contact</h2>
+			<h2 class="contact__heading lv2 hide-show">Contact</h2>
 			<div class="contact__content">
-				<img src="./assets/img/bac-02.jpg" alt="" class="contact__content--img" />
+				<img loading="lazy" src="./assets/img/bac-02.jpg" alt="" class="contact__content--img hide-show" />
 				<div class="contact-list">
-					<p class="contact-list__desc desc">
+					<p class="contact-list__desc desc hide-show">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id
 						phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
 					</p>
 					<ul class="contact-list__group">
 						<li>
-							<a href="mailto:vietbac.coding@gmail.com" rel="noopener"
+							<a class="hide-show" href="mailto:vietbac.coding@gmail.com" rel="noopener"
 								><strong>Gmail: </strong>vietbac.coding@gmail.com</a
 							>
 						</li>
 						<li>
-							<a href="https://www.facebook.com/bacdevv/" target="_blank" rel="noopener"
+							<a class="hide-show" href="https://www.facebook.com/bacdevv/" target="_blank" rel="noopener"
 								><strong>Facebook: </strong>facebook.com/bacdevv</a
 							>
 						</li>
 						<li>
-							<a href="https://www.tiktok.com/@bacdevv" target="_blank" rel="noopener"
+							<a class="hide-show" href="https://www.tiktok.com/@bacdevv" target="_blank" rel="noopener"
 								><strong>Tiktok: </strong> tiktok.com/bacdevv</a
 							>
 						</li>
@@ -270,5 +274,21 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			document.addEventListener("scroll", () => {
+				const hideShowElements = document.querySelectorAll(".hide-show");
+				const triggerBottom = window.innerHeight * 0.8;
+
+				hideShowElements.forEach((element) => {
+					const elementTop = element.getBoundingClientRect().top;
+
+					if (elementTop < triggerBottom) {
+						element.classList.add("show");
+					} else {
+						element.classList.remove("show");
+					}
+				});
+			});
+		</script>
 	</body>
 </html>
