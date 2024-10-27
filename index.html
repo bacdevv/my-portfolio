@@ -35,6 +35,9 @@
 	</head>
 
 	<body>
+		<div id="loading-screen">
+			<div class="loader"></div>
+		</div>
 		<div class="container">
 			<h1 class="mobile-message">Chưa phát triển trên điện thoại vui lòng truy cập trên máy tính</h1>
 			<img class="mobile-img" src="./assets/img/bac-02.jpg" alt="" />
@@ -377,6 +380,12 @@
 
 		<button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up-long"></i></button>
 		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Hide loading screen and show content after the page loads
+				document.getElementById("loading-screen").style.display = "none";
+				document.getElementById("content").style.display = "block";
+			});
+
 			document.addEventListener("scroll", () => {
 				const hideShowElements = document.querySelectorAll(".hide-show");
 				const triggerBottom = window.innerHeight * 0.8;
