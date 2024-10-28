@@ -314,7 +314,7 @@ a {
 .hero__info--btn:hover {
 	background: #fff;
 	color: #190068;
-	transition: all ease .3s;
+	transition: all ease 0.3s;
 }
 
 .hero__image {
@@ -328,7 +328,7 @@ a {
 }
 
 .hero__image--name {
-	font-family: "Dancing Script";
+	/* font-family: ""; */
 	left: 120px;
 	top: 70px;
 	background: var(--dark-blue);
@@ -337,6 +337,7 @@ a {
 	border-radius: 999px;
 	font-size: 1.8rem;
 	font-weight: bold;
+	z-index: 1;
 }
 
 .hero__image--three-plus {
@@ -371,6 +372,19 @@ a {
 	position: relative;
 	top: -80px;
 	right: -65px;
+	background-image: linear-gradient(
+		45deg,
+		hsl(240deg 100% 20%) 0%,
+		hsl(281deg 100% 21%) 8%,
+		hsl(304deg 100% 23%) 17%,
+		hsl(319deg 100% 30%) 25%,
+		hsl(329deg 100% 36%) 33%,
+		hsl(336deg 100% 41%) 42%,
+		hsl(346deg 83% 51%) 50%,
+		hsl(3deg 95% 61%) 58%,
+		hsl(17deg 100% 59%) 67%
+	);
+	border-radius: 100px 20px 100px 40px;
 }
 
 /* === ABOUT === */
