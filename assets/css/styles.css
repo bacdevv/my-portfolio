@@ -177,7 +177,7 @@ a {
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.wrapper {
 		display: none;
 	}
@@ -191,7 +191,7 @@ a {
 
 	.container,
 	.mobile-message {
-		display: block; /* Show mobile message on smaller screens */
+		display: block;
 	}
 
 	.mobile-message {
@@ -222,7 +222,7 @@ a {
 		display: inline-block;
 		text-decoration: underline;
 	}
-}
+} */
 
 .header {
 	padding-top: 28px;
