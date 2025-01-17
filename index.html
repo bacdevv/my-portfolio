@@ -30,6 +30,119 @@
 		<link rel="stylesheet" href="./assets/css/responsive.css" />
 	</head>
 	<body>
+		<!-- Header -->
+		<header class="header">
+			<div class="container">
+				<div class="row header__inner">
+					<!-- Logo -->
+					<div class="col">
+						<a href="/" class="logo">
+							<img class="logo__img" src="./assets/img/logo.png" alt="" />
+							<span class="logo__name">BacDev</span>
+						</a>
+					</div>
+
+					<!-- <div class="col">
+						<nav class="navbar">
+							<ul class="navbar__list">
+								<li class="navbar-item"><a href="#!" class="navbar-item__link">About Me</a></li>
+								<li class="navbar-item"><a href="#!" class="navbar-item__link">Skills</a></li>
+								<li class="navbar-item"><a href="#!" class="navbar-item__link">Project</a></li>
+								<li class="navbar-item"><a href="#!" class="navbar-item__link">Contact me</a></li>
+							</ul>
+						</nav>
+					</div> -->
+
+					<!-- <div class="col">
+						<a href="btn resume-btn">Resume <img src="./assets/icon/download.svg" alt="" /></a>
+					</div> -->
+
+					<label for="menu-checkbox" class="toggle-menu">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="36"
+							height="36"
+							viewBox="0 0 36 36"
+							fill="currentColor"
+						>
+							<rect width="36" height="36" fill="white" />
+							<path
+								d="M4.5 27V24H31.5V27H4.5ZM4.5 19.5V16.5H31.5V19.5H4.5ZM4.5 12V9H31.5V12H4.5Z"
+								fill="black"
+							/>
+						</svg>
+					</label>
+				</div>
+			</div>
+		</header>
+
+		<!-- Header Mobile / Tablet -->
+		<header class="header-mobile">
+			<input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden />
+
+			<label for="menu-checkbox" class="menu-overlay"></label>
+
+			<div class="menu-drawer">
+				<!-- Logo -->
+				<a href="/" class="logo">
+					<img class="logo__img" src="./assets/img/logo.png" alt="" />
+					<span class="logo__name">BacDev</span>
+				</a>
+
+				<nav class="navbar navbar--mobile">
+					<ul class="navbar__list">
+						<li class="navbar-item"><a href="#!" class="navbar-item__link">About me</a></li>
+						<li class="navbar-item"><a href="#!" class="navbar-item__link">Skills</a></li>
+						<li class="navbar-item"><a href="#!" class="navbar-item__link">Project</a></li>
+						<li class="navbar-item"><a href="#!" class="navbar-item__link">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="separate"></div>
+
+				<a href="#!" class="btn resume-btn">
+					Resume <img src="./assets/icons/download.svg" alt="" />
+				</a>
+			</div>
+		</header>
+
+		<main>
+			<!-- Hero -->
+			<section class="hero">
+				<div class="container">
+					<div class="row">
+						<figure class="hero__img-wrap">
+							<img src="./assets/img/hero.jpg" alt="" class="hero__img" />
+						</figure>
+
+						<div class="hero__content">
+							<h1 class="hero__heading">
+								<p class="text text-style__1">
+									Hello I’am <span class="text text-style__2">Tran Viet Bac.</span>
+								</p>
+								<p class="text text-style__2">
+									Fullstack
+									<span style="font-weight: 500; font-family: 'Fira Code', Consolas, Menlo, Monaco"
+										>Developer</span
+									>
+								</p>
+								<p class="text text-style__1">
+									Based In <span class="text text-style__2">Vietnam.</span>
+								</p>
+							</h1>
+						</div>
+
+						<p class="section-desc hero__desc">
+							I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+							1500s, when an unknown printer took a galley of type and scrambled it to specimen
+							book.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init();
