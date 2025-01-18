@@ -29,6 +29,7 @@
 	&__img {
 		width: 5rem;
 		height: 5rem;
+		object-fit: cover;
 	}
 
 	&__name {
@@ -84,6 +85,7 @@
 	background: $primary-white;
 	translate: -100% 0;
 	transition: 0.3s ease;
+	z-index: 1;
 
 	.resume-btn {
 		margin-top: 1.6rem;
@@ -118,5 +120,37 @@
 
 	&__desc {
 		margin-top: 3.2rem;
+	}
+
+	&__socials {
+		margin-top: 3.6rem;
+		display: flex;
+		align-items: center;
+		column-gap: 3rem;
+
+		&-wrap {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 1rem 1.2rem;
+			border-radius: 0.4rem;
+			border: 2px solid var(--primary-black);
+			color: var(--primary-black);
+
+			&:hover {
+				background: var(--primary-black);
+			}
+
+			&:hover .hero__socials-img {
+				color: var(--primary-white);
+			}
+		}
+
+		&-img {
+			width: 3rem;
+			height: 3rem;
+			line-height: 2;
+			font-weight: 800;
+		}
 	}
 }
