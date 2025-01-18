@@ -134,15 +134,13 @@
 			justify-content: center;
 			padding: 1rem 1.2rem;
 			border-radius: 0.4rem;
-			border: 2px solid var(--primary-black);
+			border: 0.2rem solid var(--primary-black);
 			color: var(--primary-black);
 
 			&:hover {
-				background: var(--primary-black);
-			}
-
-			&:hover .hero__socials-img {
 				color: var(--primary-white);
+				background: var(--primary-black);
+				cursor: pointer;
 			}
 		}
 
@@ -151,6 +149,40 @@
 			height: 3rem;
 			line-height: 2;
 			font-weight: 800;
+		}
+	}
+}
+
+/* Skills */
+.skills {
+	margin-top: 5rem;
+	padding: 4rem 0;
+
+	&__list {
+		margin-top: 4rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	&-item {
+		@extend .hero__socials-wrap;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 2.4rem;
+
+		&:hover &__label {
+			color: var(--primary-white);
+		}
+
+		&__label {
+			margin-top: 3.2rem;
+			color: var(--primary-black);
+			text-align: center;
+			font-size: 2rem;
+			font-weight: 700;
+			line-height: 1.2;
+			letter-spacing: -0.4px;
 		}
 	}
 }
