@@ -58,12 +58,9 @@
 	}
 
 	&__link {
+		@extend .logo__name;
 		padding: 2rem;
-		color: var(--primary-black);
-		font-size: 2rem;
 		font-weight: 500;
-		line-height: 1.2;
-		letter-spacing: -0.04rem;
 		display: block;
 	}
 }
@@ -177,12 +174,82 @@
 
 		&__label {
 			margin-top: 3.2rem;
-			color: var(--primary-black);
 			text-align: center;
-			font-size: 2rem;
-			font-weight: 700;
-			line-height: 1.2;
-			letter-spacing: -0.4px;
+			@extend .logo__name;
 		}
 	}
+}
+
+/* Experience */
+.experience {
+	padding: 6rem 0 4rem;
+	background: var(--primary-black);
+
+	.text-style__1,
+	.text-style__2 {
+		color: var(--primary-white);
+	}
+
+	&__list {
+		margin-top: 4rem;
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	&-item {
+		padding: 3rem 2.4rem;
+		border: 0.2rem solid var(--zinc-500);
+		border-radius: 1rem;
+
+		&:hover {
+			background: var(--zinc-800);
+		}
+
+		&__title {
+			@extend .logo__name;
+			font-weight: 600;
+			color: var(--primary-white);
+		}
+
+		&__timeline {
+			margin-top: 3rem;
+			color: var(--Zinc-300, #d4d4d8);
+			font-weight: 600;
+			line-height: 1.25;
+			letter-spacing: -0.032rem;
+		}
+
+		&__content {
+			margin-top: 2.8rem;
+			color: var(--zinc-300);
+			line-height: 1.5;
+			letter-spacing: 0.032rem;
+		}
+	}
+}
+
+/* About */
+.about {
+	margin-top: 4.4rem;
+
+	&__img-wrap {
+		text-align: center;
+	}
+
+	img {
+		border-radius: 50%;
+		object-fit: contain;
+	}
+
+	&__heading {
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+	}
+
+	&__desc {
+		margin-top: 2rem;
+		text-align: initial;
+	}
+
 }

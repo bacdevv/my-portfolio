@@ -1262,7 +1262,7 @@ body {
   height: 5rem;
   object-fit: cover;
 }
-.logo__name {
+.logo__name, .experience-item__title, .skills-item__label, .navbar-item__link {
   color: var(--primary-black);
   font-size: 2rem;
   font-weight: 700;
@@ -1282,11 +1282,7 @@ body {
 }
 .navbar-item__link {
   padding: 2rem;
-  color: var(--primary-black);
-  font-size: 2rem;
   font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: -0.04rem;
   display: block;
 }
 
@@ -1388,12 +1384,68 @@ body {
 }
 .skills-item__label {
   margin-top: 3.2rem;
-  color: var(--primary-black);
   text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.4px;
+}
+
+/* Experience */
+.experience {
+  padding: 6rem 0 4rem;
+  background: var(--primary-black);
+}
+.experience .text-style__1,
+.experience .text-style__2 {
+  color: var(--primary-white);
+}
+.experience__list {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.experience-item {
+  padding: 3rem 2.4rem;
+  border: 0.2rem solid var(--zinc-500);
+  border-radius: 1rem;
+}
+.experience-item:hover {
+  background: var(--zinc-800);
+}
+.experience-item__title {
+  font-weight: 600;
+  color: var(--primary-white);
+}
+.experience-item__timeline {
+  margin-top: 3rem;
+  color: var(--Zinc-300, #d4d4d8);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.032rem;
+}
+.experience-item__content {
+  margin-top: 2.8rem;
+  color: var(--zinc-300);
+  line-height: 1.5;
+  letter-spacing: 0.032rem;
+}
+
+/* About */
+.about {
+  margin-top: 4.4rem;
+}
+.about__img-wrap {
+  text-align: center;
+}
+.about img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+.about__heading {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.about__desc {
+  margin-top: 2rem;
+  text-align: initial;
 }
 
 /*# sourceMappingURL=main.css.map */
